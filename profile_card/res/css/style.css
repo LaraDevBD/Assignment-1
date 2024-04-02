@@ -1,13 +1,14 @@
-html,body{
+*{
     padding: 0;
     margin: 0;
-    background-color: #FBF3D5;
+    text-align: center;
 }
 .profile-area{
     display: flex;
     justify-content: center; /*Centering Horizentally*/
     align-items: center; /*Centering Vertically*/
-    min-height: calc( 100vh - 60px);
+    min-height: 100vh;
+    background-color: #FBF3D5;
 }
 .profile-card{
     width: 400px;
@@ -16,4 +17,9 @@ html,body{
     margin: 30px;
     background-color: #EFBC9B;
     border-radius: 20px;
+}
+.profile-photo img{
+    border-radius: 50%;
+    border: 10px solid #D6DAC8;
+    width: 200px;
 }
