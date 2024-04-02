@@ -1,4 +1,18 @@
 html,body{
     padding: 0;
     margin: 0;
+    background-color: #EFBC9B;
+}
+.profile-area{
+    display: flex;
+    justify-content: center; /*Centering Horizentally*/
+    align-items: center; /*Centering Vertically*/
+    min-height: calc( 100vh - 60px);
+}
+.profile-card{
+    width: 400px;
+    min-height: 200px;
+    padding: 30px;
+    margin: 30px;
+    background-color: #FBF3D5;
 }
