@@ -1,7 +1,7 @@
 html,body{
     padding: 0;
     margin: 0;
-    background-color: #FBF3D5;
+    background-color: #EFBC9B;
 }
 .profile-area{
     display: flex;
@@ -14,6 +14,5 @@ html,body{
     min-height: 200px;
     padding: 30px;
     margin: 30px;
-    background-color: #EFBC9B;
-    border-radius: 20px;
+    background-color: #FBF3D5;
 }
