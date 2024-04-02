@@ -2,13 +2,17 @@
     padding: 0;
     margin: 0;
     text-align: center;
+    font-size: 19px;
+    color: #000000;
+    line-height: 25px;
+    font-family: "Montserrat", sans-serif;
 }
 .profile-area{
     display: flex;
     justify-content: center; /*Centering Horizentally*/
     align-items: center; /*Centering Vertically*/
     min-height: 100vh;
-    background-color: #FBF3D5;
+    background-color: #D6DAC8;
 }
 .profile-card{
     width: 400px;
@@ -22,4 +26,29 @@
     border-radius: 50%;
     border: 10px solid #D6DAC8;
     width: 200px;
+}
+.profile-photo img:hover{
+    opacity:0;
+}
+.profile-card h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+.profile-card h3{
+    color: #FBF3D5;
+    font-size: 23px;
+    line-height: 40px;
+}
+.profile-card p{
+    margin: 15px auto;
+}
+address{
+    line-height: 40px;
+}
+.profile-card a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.profile-card a:hover{
+    color: #FBF3D5;
 }
