@@ -6,14 +6,16 @@
     color: #000000;
     line-height: 25px;
 }
+body{
+    background-color: #FBF3D5;
+}
 .row{
-    padding: 30px;
+    padding: 20px;
 }
 #result-display{
     width: 50%;
     margin: 20px auto;
     padding: 10px;
-    background-color: black;
-    color: #ffffff;
+    /* background-color: black; */
     border-radius: 20px;
 }
