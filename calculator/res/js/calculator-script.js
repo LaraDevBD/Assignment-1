@@ -16,7 +16,7 @@ function calculate(){
         //alert("Please Input Second Number");
         resultDisplay.classList.replace('alert-info','alert-danger');
         resultDisplay.textContent = "Please Input the Second Number";
-        firstInput.classList.replace('bg-danger','bg-success');
+        firstInput.classList.remove('bg-danger');
         secondInput.classList.add('bg-danger');
     }
     // Checking if second number is 0 in case of division (/) operation
@@ -24,11 +24,35 @@ function calculate(){
         //alert(firstInput.value+" can't be devided with a 0");
         resultDisplay.classList.replace('alert-info','alert-danger');
         resultDisplay.textContent = firstInput.value+" can't be devided with a 0";
-        firstInput.classList.replace('bg-danger','bg-success');
+        firstInput.classList.remove('bg-danger');
         secondInput.classList.add('bg-danger');
     }
     // If all checking done
     else{
-
+        firstInput.classList.remove('bg-danger');
+        secondInput.classList.remove('bg-danger');
+        let theResult = 0;
+        switch(true){
+            case (selectedOperator.value=="+"):
+                // alert("Plus");
+                theResult = parseFloat(firstInput.value)+parseFloat(secondInput.value);
+            break;
+            case (selectedOperator.value=="-"):
+                // alert("Minus");
+                theResult = parseFloat(firstInput.value)-parseFloat(secondInput.value);
+            break;
+            case(selectedOperator.value=="*"):
+                // alert("Multiply");
+                theResult = parseFloat(firstInput.value)*parseFloat(secondInput.value);
+            break;
+            case(selectedOperator.value=="/"):
+                // alert("Division");
+                theResult = parseFloat(firstInput.value)/parseFloat(secondInput.value);
+            break;
+        }
+        resultDisplay.classList.remove('alert-danger');
+        resultDisplay.classList.remove('alert-info');
+        resultDisplay.classList.add('text-white','bg-success');
+        resultDisplay.textContent = "Calculated Result= "+theResult.toFixed(2);
     }
 }
