@@ -7,15 +7,22 @@
     line-height: 25px;
 }
 body{
-    background-color: #FBF3D5;
+    background-color: #F1FADA;
 }
-.row{
+h1{
+    font-size: xx-large;
+}
+#calculator{
+    background-color: #9AD0C2;
+    border-radius: 20px;
+}
+#calculator .row{
     padding: 20px;
 }
 #result-display{
-    width: 50%;
-    margin: 20px auto;
     padding: 10px;
-    /* background-color: black; */
     border-radius: 20px;
+}
+footer small{
+    color: #F1FADA;
 }
