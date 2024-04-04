@@ -12,14 +12,14 @@
     justify-content: center; /*Centering Horizentally*/
     align-items: center; /*Centering Vertically*/
     min-height: 100vh;
-    background-color: #D6DAC8;
+    background-color: #FFE7E7;
 }
 .profile-card{
     width: 400px;
     min-height: 200px;
     padding: 30px;
     margin: 30px;
-    background-color: #EFBC9B;
+    background-color: #B47B84;
     border-radius: 20px;
 }
 .profile-photo img{
@@ -31,19 +31,16 @@
     opacity:0;
 }
 .profile-card h2{
-    font-size: 30px;
+    font-size: 32px;
     line-height: 40px;
 }
 .profile-card h3{
     color: #FBF3D5;
-    font-size: 23px;
+    font-size: 25px;
     line-height: 40px;
 }
 .profile-card p{
     margin: 15px auto;
-}
-address{
-    line-height: 40px;
 }
 .profile-card a{
     text-decoration: none;
@@ -51,4 +48,8 @@ address{
 }
 .profile-card a:hover{
     color: #FBF3D5;
+}
+address{
+    font-size: 23px;
+    line-height: 40px;
 }
