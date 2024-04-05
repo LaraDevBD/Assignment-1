@@ -38,5 +38,13 @@ const bankAccount2 = new BankAccount(4567,"Kabil Mondol",3099);
 // Deposit Functionality Demonstration
 bankAccount1.deposit(442);
 console.log("=============================================");
-console.log("After Deopsiting $442 in "+bankAccount1.accountNumber+" account numebr the new balance is: $"+bankAccount1.getBalance());
+console.log("After Deopsiting $442 in "+bankAccount1.accountNumber+" Account Number the New Balance is: $"+bankAccount1.getBalance());
 console.log("=============================================");
+
+// Withdraw Functionality Demonstration
+bankAccount2.withdraw(340);
+console.log("=============================================");
+console.log("After Withdrawing $340 from "+bankAccount2.accountNumber+" Account Number the New Balance is: $"+bankAccount2.getBalance());
+console.log("=============================================");
+
+
