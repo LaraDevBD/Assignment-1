@@ -22,6 +22,9 @@ class BankAccount{
             console.log("Insufficient funds");
         }
     }
+    getBalance(){
+        return this.balance;
+    }
 
 }
 
