@@ -15,6 +15,14 @@ class BankAccount{
         this.balance = this.balance + amount;
     }
 
+    withdraw(amount){
+        if(amount<=this.balance){
+            this.balance = this.balance - amount;
+        }else{
+            console.log("Insufficient funds");
+        }
+    }
+
 }
 
 const bankAccount1 = new BankAccount(1234,"Habil Mondol",9999);
