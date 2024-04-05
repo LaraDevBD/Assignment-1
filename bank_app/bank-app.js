@@ -4,11 +4,7 @@ class BankAccount{
         this.accountNumber = accountNumber;
         this.ownerName = ownerName;
         this.balance = balance;
-        console.log("===============================");
-        console.log("Account Number: "+this.accountNumber);
-        console.log("Owner Name: "+this.ownerName);
-        console.log("Balance: $"+this.balance);
-        console.log("===============================");
+        this.displayAccountInfo();
     }
 
     deposit(amount){
@@ -25,7 +21,13 @@ class BankAccount{
     getBalance(){
         return this.balance;
     }
-
+    displayAccountInfo(){
+        console.log("===============================");
+        console.log("Account Number: "+this.accountNumber);
+        console.log("Owner Name: "+this.ownerName);
+        console.log("Balance: $"+this.balance);
+        console.log("===============================");
+    }
 }
 
 const bankAccount1 = new BankAccount(1234,"Habil Mondol",9999);
