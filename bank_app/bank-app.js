@@ -11,6 +11,10 @@ class BankAccount{
         console.log("===============================");
     }
 
+    deposit(amount){
+        this.balance = this.balance + amount;
+    }
+
 }
 
 const bankAccount1 = new BankAccount(1234,"Habil Mondol",9999);
