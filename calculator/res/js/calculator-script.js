@@ -9,7 +9,7 @@ function calculate(){
         //alert("Please Check First Number");
         resultDisplay.classList.remove('bg-primary','bg-success');
         resultDisplay.classList.add('bg-danger');
-        resultDisplay.textContent = "Please Check the First Number";
+        resultDisplay.textContent = "First Number is Invalid for Operation";
         firstInput.classList.add('bg-danger');
     }
     // Checking if Second Number is inputted and the value is number
@@ -17,7 +17,7 @@ function calculate(){
         //alert("Please Check Second Number");
         resultDisplay.classList.remove('bg-primary','bg-success');
         resultDisplay.classList.add('bg-danger');
-        resultDisplay.textContent = "Please Check the Second Number";
+        resultDisplay.textContent = "Second Number is Invalid for Operation";
         firstInput.classList.remove('bg-danger');
         secondInput.classList.add('bg-danger');
     }
