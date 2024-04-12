@@ -28,7 +28,8 @@
     width: 200px;
 }
 .profile-photo img:hover{
-    opacity:0;
+    border-color: #FFE7E7;
+    opacity: 0.9;
 }
 .profile-card h2{
     font-size: 32px;
@@ -52,4 +53,6 @@
 address{
     font-size: 23px;
     line-height: 40px;
+    border-top: #FBF3D5 solid 2px;
+    padding-top: 20px;
 }
