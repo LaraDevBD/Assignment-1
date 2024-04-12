@@ -4,7 +4,6 @@ class BankAccount{
         this.accountNumber = accountNumber;
         this.ownerName = ownerName;
         this.balance = balance;
-        this.displayAccountInfo();
     }
 
     deposit(amount){
@@ -12,10 +11,13 @@ class BankAccount{
     }
 
     withdraw(amount){
+        // Checking if the account balance is sufficient for withdrawal
         if(amount<=this.balance){
             this.balance = this.balance - amount;
+            return true;
         }else{
-            console.log("Insufficient funds");
+            console.log("Insufficient Balance for Withdrawal");
+            return false;
         }
     }
 
@@ -24,37 +26,43 @@ class BankAccount{
     }
 
     displayAccountInfo(){
-        console.log("=========================================================");
         console.log("Account Number: "+this.accountNumber);
         console.log("Owner Name: "+this.ownerName);
         console.log("Balance: $"+this.balance);
-        console.log("=========================================================");
     }
 }
 
 //Creating Two Instances as per instructions
 console.log("=========================================================");
-console.log(":::::: First Bank Account ::::::");
-const bankAccount1 = new BankAccount(1234,"Habil Mondol",9999);
-console.log(":::::: Second Bank Account ::::::");
-const bankAccount2 = new BankAccount(4567,"Kabil Mondol",3099);
+const bankAccount1 = new BankAccount(1001,"Habil Mondol",9999);
+console.log(":::::: First Bank Account Opened ::::::");
+bankAccount1.displayAccountInfo();
+console.log("=========================================================");
+const bankAccount2 = new BankAccount(1002,"Kabil Mondol",3099);
+console.log(":::::: Second Bank Account Opened ::::::");
+bankAccount1.displayAccountInfo();
+console.log("=========================================================");
 
 // Deposit Functionality Demonstration
 console.log("=========================================================");
 console.log(":::::: Deposit Functionality Demonstration ::::::");
+console.log("=========================================================");
+console.log("Before Deopsiting into the Account Number  "+bankAccount1.accountNumber+"  the Balance was: $"+bankAccount1.getBalance());
 bankAccount1.deposit(442);
-console.log("After Deopsiting $442 in "+bankAccount1.accountNumber+" Account Number the New Balance is: $"+bankAccount1.getBalance());
+console.log("After Deopsiting into the Account Number  "+bankAccount1.accountNumber+"  the New Balance is: $"+bankAccount1.getBalance());
+console.log(">> And Here is the Updated Account Inforamtion <<");
+bankAccount1.displayAccountInfo();
 console.log("=========================================================");
 
 // Withdraw Functionality Demonstration
 console.log("=========================================================");
 console.log(":::::: Withdraw Functionality Demonstration ::::::");
-bankAccount2.withdraw(340);
-console.log("After Withdrawing $340 from "+bankAccount2.accountNumber+" Account Number the New Balance is: $"+bankAccount2.getBalance());
 console.log("=========================================================");
-
-// Showing Updated Account Info
-console.log("=========================================================");
-console.log(":::::: And Here is the Updated Account Inforamtion ::::::");
-bankAccount1.displayAccountInfo();
+console.log("Before Withdrawal from the Account Number "+bankAccount2.accountNumber+" the Balance was: $"+bankAccount2.getBalance());
+let withdrawState =  bankAccount2.withdraw(500);
+if (withdrawState==true){
+    console.log("After Withdrawal from the Account Number "+bankAccount2.accountNumber+"  the New Balance is: $"+bankAccount2.getBalance());
+}
+console.log(">> And Here is the Updated Account Inforamtion <<");
 bankAccount2.displayAccountInfo();
+console.log("=========================================================");
